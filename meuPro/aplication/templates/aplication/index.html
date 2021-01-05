@@ -1,0 +1,107 @@
+{% extends 'aplication/base.html' %}
+{% load static %}
+
+{% block title %}
+    index
+{% endblock %}
+
+
+{% block header%}
+{% endblock %}
+
+{% block content %}
+<div class="header">
+    <div class="linha">
+        <header>
+            <div class="coluna col4">
+                <img src="{% static 'css/imagens/imagem2.png' %}" alt="">
+            </div>
+            <div class="coluna col8">
+                <nav>
+                    <ul class="menu inline sem-marcador">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'moda' %}">Moda</a></li>
+                        <li><a href="{% url 'beleza' %}">Beleza</a></li>
+                        <li><a href="{% url 'tendencia' %}">Tendências</a></li>
+                        <li><a href="{% url 'contato' %}">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="linha">
+    <section>
+        <div class="coluna col3 sidebar">
+            <h3><strong>MODA</strong></h3>
+            <ul class="sem-marcador sem-padding">
+                <ol>
+                    <li><a href=""><strong>Verão</strong></a></li>
+                    <li><a href=""><strong>Inverno</strong></a></li>
+                    <li><a href=""><strong>Moda Praia</strong></a></li>
+                    <li><a href=""><strong>Cabelos</strong></a></li>
+                    <li><a href=""><strong>Skincare</strong></a></li>
+                    <li><a href=""><strong>Corpo</strong></a></li>
+                    <li><a href=""><strong>Unhas</strong></a></li>
+                </ol>
+
+            </ul>
+            <a href="{% url 'moda' %}" class="botao">Ver todos &raquo;</a>
+        </div>
+        <div class="coluna col9">
+            <h2>Tendências de Moda e Beleza</h2>
+            <video src="{% static 'css/imagens/video/tendencias 2021.mp4' %}" width="500" controls loop></video>
+            <br>
+        </div>
+    </section>
+</div>
+<div class="conteudo-extra"></div>
+
+<div class="linha">
+    <div class="coluna col7">
+        <section>
+            <h2>Como a moda pode ajudar você?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur autem et in, aliquid commodi sed id
+                voluptatem ad culpa ex reiciendis beatae aut minus voluptatibus iste quod nesciunt voluptas rem?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta, distinctio, numquam mollitia
+                sed inventore nesciunt excepturi rerum id quia qui minima. Id nisi repellendus iure voluptates
+                consectetur? Odio, eius?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi itaque veritatis alias
+                architecto mollitia facilis, rem voluptates asperiores sed? Est, magni quisquam excepturi commodi
+                aperiam aspernatur ea nihil esse.</p>
+        </section>
+    </div>
+    <div class="coluna col5">
+        <h3><em><strong>Última notícias</strong></em></h3>
+        <ul class="sem-mercador sem-padding noticias">
+            <li>
+                <img src="https://conteudo.imguol.com.br/c/entretenimento/0e/2020/12/07/calca-circular-de-pos-consumo-lancada-pela-marca-de-moda-brasileira-youcom-1607350435237_v2_450x600.jpg" alt="externa">
+                <h4>Marca produz jeans a partir de 900 quilos de tecido reaproveitado de doação</h4>
+                <p>Uma simples calça jeans pode ter um impacto enorme no meio ambiente. Isso porque, se levarmos em conta todo o ciclo de vida de uma peça, desde a produção do algodão, o transporte e as lavagens, são consumidos quase 4 mil litros de água. O processo equivale à emissão de 33,4 quilos de carbono, ou uma viagem de carro de mais de 100 quilômetros.... - Veja mais em: <a target="_blank" href="https://www.uol.com.br/ecoa/ultimas-noticias/2020/12/07/marca-produz-jeans-a-partir-de-900-quilos-de-tecido-reaproveitado-de-doacao.htm?cmpid=copiaecola" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://veja.abril.com.br/wp-content/uploads/2016/06/260411-pierre-original.jpeg?quality=70&strip=info&resize=680,453" alt="externa">
+                <h4>Morre o estilista francês Pierre Cardin, ícone da moda, aos 98 anos</h4>
+                <p>Italiano naturalizado francês foi pioneiro na moda unissex e no prêt-à-porter, com designs futuristas e vanguardistas usados até pelos Beatles 
+                Leia mais em:<a target="_blank" href="https://veja.abril.com.br/cultura/morre-o-estilista-frances-pierre-cardin-icone-da-moda-aos-98-anos/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://ffw.uol.com.br/app/uploads/noticias/2020/12/prada-ss21-w-show-image-05-1200x800.jpg" alt="externa">
+                <h4>2020: O ano em que a pandemia parou o mundo e mudou a moda</h4>
+                <p>Que ano foi esse de 2020. Quantas mudanças foram provocadas pela pandemia, quantos desafios surgiram para pessoas e empresas, em diversas escalas, e também quantos aprendizados tivemos – e seguiremos em pandemia até a vacina chegar por para todos.<a target="_blank" href="https://ffw.uol.com.br/noticias/moda/2020-o-ano-em-que-a-pandemia-parou-o-mundo-e-mudou-a-moda/"> Leia mais &raquo;</a></p>
+            </li>
+        </ul>
+        </ul>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="linha">
+        <footer>
+            <div class="coluna col12">
+                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock  %}

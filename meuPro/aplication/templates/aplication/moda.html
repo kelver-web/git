@@ -1,0 +1,141 @@
+{% extends 'aplication/base.html' %}
+{% load static %}
+
+{% block title %}
+    moda
+{% endblock %}
+
+
+{% block header%}
+{% endblock %}
+
+
+{% block content %}
+<div class="header">
+    <div class="linha">
+        <header>
+            <div class="coluna col4">
+                <img src="{% static 'css/imagens/imagem2.png' %}" alt="">
+            </div>
+            <div class="coluna col8">
+                <nav>
+                    <ul class="menu inline sem-marcador">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'moda' %}">Moda</a></li>
+                        <li><a href="{% url 'beleza' %}">Beleza</a></li>
+                        <li><a href="{% url 'tendencia' %}">Tendências</a></li>
+                        <li><a href="{% url 'contato' %}">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="linha">
+    <section>
+        <h2>Veja o que está na moda</h2>
+        <div class="coluna col6">
+            <h4>Óculos de sol retangular - um clássico e vale a pena apostar</h4>
+            <img src="{% static 'css/imagens/oculos.png' %}" alt="">
+            <p>É isso mesmo, o modelo retrô está em alta e ganha cada vez mais espaço no street style. Essa peça já está confirmada para as próximas temporadas de verão em 2021, e  melhor, seu formato combina com todo tipo de rosto. Além de combinar com todo tipo de rosto, tambem combina com todo tipo de look! Sao tantas possibilidades para voce arrasar nas proximas temporadas de 2021, que voce nao pode perder tempo e precisa garantir o seu! Famosas como Billie Eilish e Kylie Jenner já aderiram a moda.</p>
+        </div>
+        <div class="coluna col6">
+            <h4>Fulano 2</h4>
+            <img src="{% static 'css/imagens/thumb-grande.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+        <div class="coluna col4">
+            <h4>Fulano 3</h4>
+            <img src="{% static 'css/imagens/thumb-pequena.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+        <div class="coluna col4">
+            <h4>Fulano 4</h4>
+            <img src="{% static 'css/imagens/thumb-pequena.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+        <div class="coluna col4">
+            <h4>Fulano 5</h4>
+            <img src="{% static 'css/imagens/thumb-pequena.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+        <div class="coluna col4">
+            <h4>Fulano 6</h4>
+            <img src="{% static 'css/imagens/thumb-pequena.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+        <div class="coluna col4">
+            <h4>Fulano 7</h4>
+            <img src="{% static 'css/imagens/thumb-pequena.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+        <div class="coluna col4">
+            <h4>Fulano 8</h4>
+            <img src="{% static 'css/imagens/thumb-pequena.jpg' %}" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident fugit iure repellendus
+                praesentium nihil nostrum eveniet deleniti. Quas dicta, blanditiis officiis molestiae aperiam
+                deserunt veritatis itaque consequatur in neque?</p>
+        </div>
+    </section>
+</div>
+<div class="conteudo-extra"></div>
+<div class="linha">
+    <div class="coluna col7">
+        <section>
+            <h2>Opinões</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur autem et in, aliquid commodi sed id
+                voluptatem ad culpa ex reiciendis beatae aut minus voluptatibus iste quod nesciunt voluptas rem?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta, distinctio, numquam mollitia
+                sed inventore nesciunt excepturi rerum id quia qui minima. Id nisi repellendus iure voluptates
+                consectetur? Odio, eius?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi itaque veritatis alias
+                architecto mollitia facilis, rem voluptates asperiores sed? Est, magni quisquam excepturi commodi
+                aperiam aspernatur ea nihil esse.</p><em>Fulano de tal - Empresa ABC</em>
+        </section>
+    </div>
+    <div class="coluna col5">
+        <h3><em><strong>Última notícias</strong></em></h3>
+        <ul class="sem-mercador sem-padding noticias">
+            <li>
+                <img src="https://www.wefashiontrends.com/wp-content/uploads/2021/01/familia-kardashian.jpg" alt="">
+                <h4>10 tendências que as Kardashians trouxeram de volta à moda</h4>
+                <p>Se há uma coisa que ninguém pode negar, é o serviço que as Kardashians prestaram à massa da população corporal curvilínea. Antes de começarem a estar sob os holofotes, o cânone estético era bem diferente e, graças à forma de exaltar as próprias curvas, implantaram no imaginário uma mudança que revolucionou a sociedade.<a target="_blank" href="https://www.wefashiontrends.com/10-tendencias-que-as-kardashians-trouxeram-de-volta-moda/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://img.r7.com/images/looks-monocromaticos-como-usar-e-melhores-inspiracoes-para-voce-04012021093038980?dimensions=660x360" alt="">
+                <h4>Looks monocromáticos, como usar? Melhores inspirações para você</h4>
+                <p>Antes de mais nada, sabemos que o mundo da moda está sempre se reinventando, porém, existem composições que são atemporais, como os looks monocromáticos.
+                <a target="_blank" href="https://lifestyle.r7.com/moda/area-de-mulher/looks-monocromaticos-como-usar-melhores-inspiracoes-para-voce-04012021" rel="external"> Leia mais &raquo;</a></p>
+                </li>
+                <li>
+                <img src="https://img.r7.com/images/confira-o-look-dos-famosos-para-o-reveillon-01012021094832045?dimensions=369x209" alt="">
+                <h4>Branco dominou: confira o look dos famosos para o Réveillon</h4>
+                <p>Em clima de romance ou em família, famosos não dispensaram o tradicional look branco para passarem o Réveillon e comemorarem a chegada de 2021.<a target="_blank" href="https://entretenimento.r7.com/famosos-e-tv/fotos/branco-dominou-confira-o-look-dos-famosos-para-o-reveillon-01012021#!/foto/1" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+        </ul>
+        </ul>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="linha">
+        <footer>
+            <div class="coluna col12">
+                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock  %}

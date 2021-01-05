@@ -1,0 +1,124 @@
+{% extends 'aplication/base.html' %}
+{% load static %}
+
+{% block title %}
+    tendencia
+{% endblock %}
+
+
+{% block header%}
+{% endblock %}
+
+
+{% block content %}
+<div class="header">
+    <div class="linha">
+        <header>
+            <div class="coluna col4">
+                <img src="{% static 'css/imagens/imagem2.png' %}" alt="">
+            </div>
+            <div class="coluna col8">
+                <nav>
+                    <ul class="menu inline sem-marcador">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'moda' %}">Moda</a></li>
+                        <li><a href="{% url 'beleza' %}">Beleza</a></li>
+                        <li><a href="{% url 'tendencia' %}">Tendências</a></li>
+                        <li><a href="{% url 'contato' %}">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="linha">
+    <section>
+        <div class="coluna col3 sidebar">
+            <h3>Moda</h3>
+            <ul class="sem-marcador sem-padding">
+                <ol>
+                    <li><a href=""><strong>Verão</strong></a></li>
+                    <li><a href=""><strong>Inverno</strong></a></li>
+                    <li><a href=""><strong>Moda Praia</strong></a></li>
+                    <li><a href=""><strong>Cabelos</strong></a></li>
+                    <li><a href=""><strong>Skincare</strong></a></li>
+                    <li><a href=""><strong>Corpo</strong></a></li>
+                    <li><a href=""><strong>Unhas</strong></a></li>
+                </ol>
+            </ul>
+            <a href="moda.html" class="botao">Ver todos &raquo;</a>
+        </div>
+        <div class="coluna col9">
+            <h2>Tendências para 2021</h2>
+            <p>O ano mal começou e já estamos separando as principais tendências para você não ficar fora de moda! 
+                Verão ou inverno, as previsões de tendências de 2021 trazem um pouco de tudo o que vai rolar pelos próximos meses, e já adiantamos que será um ano de ousar um pouco mais nas cores e estampas. Confira as 5 principais tendências desse ano:
+            </p>
+            <p><strong>1.RELAXED JEANS</strong></p>
+            <img src="{% static 'css/imagens/Design1.png' %}" alt="Design1" width="700" height="600">
+            <p>Vai dizer que você não gostou desses looks!? Depois de um ano inteiro vestindo roupas mais largas e confortáveis em casa, nosso comportamento também será levado para as ruas em 2021 e o conforto será a peça chave nos looks.</p>
+            <p><strong>2.BACKLESS</strong></p>
+            <img src="{% static 'css/imagens/Design2.png' %}" alt="Design1" width="700" height="600">
+            <p>Outra tendência que continua ganhando força esse ano é o backless, ou, decote nas costas. Esse look super ousado promete continuar sendo uma das maiores propostas de 2021.</p>
+            <p><strong>3.MANGAS BUFANTES</strong></p> 
+            <img src="{% static 'css/imagens/Design3.png' %}" alt="Design1" width="700" height="600">
+            <p>Peças com mangas bufantes foram uma febre total nos anos 80, e agora volta com força e com super toques de ousadia e modernidade.</p>
+            <p><strong>4.BREEZY DRESS</strong></p>
+            <img src="{% static 'css/imagens/Design4.png' %}" alt="Design1" width="700" height="600">
+            <p>Conforto, estilo e  praticidade é tudo que desejamos para 2021. O breezy dress é a peça perfeita para isso. 
+            </p>
+            <p><strong>5.ESTAMPA VICHY</strong></p>
+            <img src="{% static 'css/imagens/Design5.png' %}" alt="Design1" width="700" height="600">
+            <p>estampa vichy chegou para ficar! A tendência foi hit nos anos 50 e 60 e agora promete ser mais uma tendência de 2021.</p>
+            <a href="moda.html" class="botao">Ver outros &raquo;</a>
+        </div>
+    </section>
+</div>
+<div class="conteudo-extra"></div>
+<div class="linha">
+    <div class="coluna col7">
+        <section>
+            <h2>Como melhorar seu look?</h2>
+            <p>Vamos falar sobre, como se vestir bem?. Algumas dúvidas podem surgir na hora de escolher a roupa certa, podemos nos deparar com a seguinte pergunta, como posso me vestir melhor? como tal pessoa aprendeu a se vestir tão bem assim? ele ou ela sempre se vestiu legal?. Pois é eu sempre gostei de me arrumar, mas nem sempre me vesti bem. Nem sempre eu soube escolher a roupa certa para mim, também não sabia olhar tão bem as proporções das roupas, às vezes usava roupas que me faziam parecer gorda demais(mesmo sendo magra).</p>
+            <p>Na busca por soluções eu sempre lia blogs para buscar inspirações, acho que a maioria faz isso também. Decidi mudar meu estilo neste ano de 2021 e vou dizer qual estratégia comecei a usar para mudar meu estilo.</p>
+            <ol>
+                <li>Salve os looks prediletos em uma pasta</li>
+                <li> Tenha peças chaves</li>
+                <li> Saia da zona de conforto</li>
+                <li> Tire fotos dos seus looks</li>
+                <li>Busque inspirações</li>
+            </ol>
+        </section>
+    </div>
+    <div class="coluna col5">
+        <h3><em><strong>Últimas notícias</strong></em></h3>
+        <ul class="sem-mercador sem-padding noticias">
+            <li>
+                <img src="https://www.digitaletextil.com.br/blog/wp-content/uploads/2020/10/unnamed-1.png" alt="">
+                <h4>Verão 2021: tendências da moda e do mercado para a estação</h4>
+                <p>A procura pelas tendências das próximas temporadas se inicia muito antes de sua chegada. Isso porque os produtores e amantes de moda buscam essas referências com antecedência para poderem se planejar, incorporando as cores e estilos que estarão em alta na hora de consumir ou produzir novas peças e coleções. Sendo assim, chegou a hora de falarmos sobre o que já está em pauta nas produções das  grandes marcas para o verão 2021: tendências para que você fique antenado e se prepare desde já para arrasar, seja nos looks, seja nos negócios.<a target="_blank" href="https://www.digitaletextil.com.br/blog/verao-2021-tendencias/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://pn7.com.br/wp-content/uploads/2020/09/Moda-Primavera-Verao-2021-Looks-que-Sao-Tendencias-Para-Arrasar-990x495.jpg" alt="">
+                <h4>Moda Primavera Verão 2021: Looks que São Tendências Para Arrasar!</h4>
+                <p>As estações mais quentes do ano trouxeram roupas e calçados fresquinhos e perfeitos! Para esses dias ensolarados, a moda primavera verão 2021 chega repleta de cores, estampas, peças e looks imperdíveis!.<a target="_blank" href="https://pn7.com.br/moda-primavera-verao-2021-looks-que-sao-tendencias-para-arrasar/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://capricho.abril.com.br/wp-content/uploads/2020/12/Tend%C3%AAncias-moda-2021.jpg?quality=85&strip=info&resize=680,453" alt="">
+                <h4>As tendências de moda que prometem bombar em 2021</h4>
+                <p>Conheça as peças, estampas e detalhes que serão destaque na moda em 2021<a target="_blank" href="https://capricho.abril.com.br/moda/as-tendencias-de-moda-que-prometem-bombar-em-2021/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+        </ul>
+        </ul>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="linha">
+        <footer>
+            <div class="coluna col12">
+                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock  %}

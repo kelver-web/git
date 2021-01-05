@@ -1,0 +1,112 @@
+{% extends 'aplication/base.html' %}
+{% load static %}
+
+{% block title %}
+    beleza
+{% endblock %}
+
+
+{% block header%}
+{% endblock %}
+
+
+{% block content %}
+<div class="header">
+    <div class="linha">
+        <header>
+            <div class="coluna col4">
+                <img src="{% static 'css/imagens/imagem2.png' %}" alt="">
+            </div>
+            <div class="coluna col8">
+                <nav>
+                    <ul class="menu inline sem-marcador">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'moda' %}">Moda</a></li>
+                        <li><a href="{% url 'beleza' %}">Beleza</a></li>
+                        <li><a href="{% url 'tendencia' %}">Tendências</a></li>
+                        <li><a href="{% url 'contato' %}">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="linha">
+    <section>
+        <div class="coluna col4 sidebar">
+            <h3>O que eu faço?</h3>
+            <ul class="sem-marcador sem-padding">
+                <ol>
+                    <li><a href=""><strong>Verão</strong></a></li>
+                    <li><a href=""><strong>Inverno</strong></a></li>
+                    <li><a href=""><strong>Moda Praia</strong></a></li>
+                    <li><a href=""><strong>Cabelos</strong></a></li>
+                    <li><a href=""><strong>Skincare</strong></a></li>
+                    <li><a href=""><strong>Corpo</strong></a></li>
+                    <li><a href=""><strong>Unhas</strong></a></li>
+                </ol>
+            </ul>
+            <a href="{% url 'moda' %}" class="botao">Ver todos &raquo;</a>
+        </div>
+        <div class="coluna col8">
+            <h2><strong>Tendências de maquiagem para 2021</strong></h2>
+            <p>1. Olhos coloridos
+                Mais do que nunca, as cores tomarão conta das produções. Com toda a atenção voltada para o olhar, afinal, as máscaras de proteção contra o vírus acabam deixando apenas os olhos à mostra,a ideia é criar sombras e desenhos ultracoloridos nas pálpebras. 
+                </p>
+            <img src="{% static 'css/imagens/maquiagem2.jpg' %}" width="700" height="700" alt="">
+
+            <p>2. Cílios coloridos
+                Entrando no estilo divertido e cheio de cores que a maquiagem está se aproximando, os cílios coloridos também aparecerão com tudo neste ano. O visual mais conceitual surgiu primeiro e passarelas, mas promete conquistar também a moda de rua. Uma dica para aderir ao look é aplicar a máscara de cílios colorida por cima da máscara convencional. 
+                </p>
+            <img src="{% static 'css/imagens/maquiagem.jpg' %}" width="700" height="700" alt="">
+
+            <p>3. Lábios em destaque
+                Apesar do foco neste ano ser os olhos, os lábios também terão o seu momento e, quando isso acontecer, aparecerão bastante destacados. Cores fortes irão dominar a cena e os produtos de longa duração serão os mais procurados.
+                </p>
+            <img src="{% static 'css/imagens/maquiagem3.jpg' %}" width="700" height="700" alt="">
+        </div>
+    </section>
+</div>
+<div class="conteudo-extra"></div>
+<div class="linha">
+    <div class="coluna col7">
+        <section>
+            <h2>Como se verstir bem no verão?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur autem et in, aliquid commodi sed id voluptatem ad culpa ex reiciendis beatae aut minus voluptatibus iste quod nesciunt voluptas rem?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta, distinctio, numquam mollitia sed inventore nesciunt excepturi rerum id quia qui minima. Id nisi repellendus iure voluptates consectetur? Odio, eius?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi itaque veritatis alias architecto mollitia facilis, rem voluptates asperiores sed? Est, magni quisquam excepturi commodi aperiam aspernatur ea nihil esse.</p>
+        </section>
+    </div>
+    <div class="coluna col5">
+        <h3><em><strong>Última notícias</strong></em></h3>
+        <ul class="sem-mercador sem-padding noticias">
+            <li>
+                <img src="https://ffw.uol.com.br/app/uploads/noticias/2020/12/img-0682-1200x1800.jpg" alt="externa">
+                <h4>Veja o desfile da Bottega Veneta por Daniel Lee para o verão 21</h4>
+                <p>Daniel Lee não é um grande entusiasta do universo digital, vide sua escolha pelo fotógrafo Tyrone Lebon – reconhecido por seu trabalho de fotos analógicas e texturas – para clicar as campanhas da Bottega Veneta, marca italiana que ele transformou na queridinha dos fashionistas desde que assumiu a direção criativa da marca em 2018.<a target="_blank" href="https://ffw.uol.com.br/noticias/moda/veja-o-desfile-da-bottega-veneta-por-daniel-lee-para-o-verao-21/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://ffw.uol.com.br/app/uploads/noticias/2020/12/captura-de-tela-2020-12-02-as-173919.png" alt="">
+                <h4>VAMO: Conheça o movimento interracial que trabalha o antirracismo na moda</h4>
+                <p>O grupo VAMO (Vetor Afro-Indígena na Moda) surgiu este ano em meio à pandemia como uma organização de profissionais do setor para trabalhar o antirracismo e fomentar a luta contra o preconceito sistêmico através de ações educativas e positivas.<a target="_blank" href="https://ffw.uol.com.br/noticias/moda/vamo-conheca-o-movimento-interracial-que-trabalha-o-antirracismo-na-moda/" rel="external"> Leia mais &raquo;</a></p>
+            </li>
+            <li>
+                <img src="https://ffw.uol.com.br/app/uploads/noticias/2020/12/captura-de-tela-2020-12-15-as-135218-318x208.png" alt="">
+                <h4>Assista ao desfile de verão 21 da Saint Laurent nas dunas de um deserto</h4>
+                <p>Anthony Vaccarello revelou nesta terça as 10h a nova coleção de verão da Saint Laurent em desfile digital ídilico tendo como cenário um deserto.As modelos caminhavam no topo de dunas.<a target="_blank" href="https://ffw.uol.com.br/noticias/moda/assista-ao-desfile-de-verao-21-da-saint-laurent/" rel="external">Leia mais &raquo;</a></p>
+            </li>
+        </ul>
+        </ul>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="linha">
+        <footer>
+            <div class="coluna col12">
+                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock  %}

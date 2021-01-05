@@ -1,0 +1,63 @@
+{% extends 'aplication/base.html' %}
+{% load static %}
+
+{% block title %}
+    contato
+{% endblock %}
+
+
+{% block header%}
+{% endblock %}
+
+
+{% block content %}
+<div class="header">
+    <div class="linha">
+        <header>
+            <div class="coluna col4">
+                <img src="{% static 'css/imagens/imagem2.png' %}" alt="">
+            </div>
+            <div class="coluna col8">
+                <nav>
+                    <ul class="menu inline sem-marcador">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'moda' %}">Moda</a></li>
+                        <li><a href="{% url 'beleza' %}">Beleza</a></li>
+                        <li><a href="{% url 'tendencia' %}">Tendências</a></li>
+                        <li><a href="{% url 'contato' %}">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</div>
+<div class="linha">
+    <section>
+       
+        <div class="coluna col7 contato">
+            <h2><em>Envie sua mensagem e deixe seu comentário</em></h2>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="datetime-local" name="data">
+                <input type="submit" class="botao" name="enviar" value="enviar mensagem &raquo;" onclick="msg()" >
+                <script>
+                    function msg() {
+                      alert("Sua mensagem foi enviada com sucesso!");
+                    }
+                </script>
+            </form>
+        </div>
+    </section>
+</div>
+
+<div class="footer">
+    <div class="linha">
+        <footer>
+            <div class="coluna col12">
+                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">Look Style
+            </div>
+        </footer>
+    </div>
+</div>
+{% endblock  %}
