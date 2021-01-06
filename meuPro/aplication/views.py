@@ -32,3 +32,11 @@ def tendencia(request):
 
 def contato(request):
     return render(request, template_name='aplication/contato.html')
+
+
+def unhas(request):
+    return render(request, template_name='aplication/unhas.html')
+
+
+def cabelo(request):
+    return render(request, template_name='aplication/cabelo.html')

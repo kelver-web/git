@@ -39,17 +39,17 @@
                     <li><a href=""><strong>Verão</strong></a></li>
                     <li><a href=""><strong>Inverno</strong></a></li>
                     <li><a href=""><strong>Moda Praia</strong></a></li>
-                    <li><a href=""><strong>Cabelos</strong></a></li>
+                    <li><a href="{% url 'cabelo' %}"><strong>Cabelos</strong></a></li>
                     <li><a href=""><strong>Skincare</strong></a></li>
                     <li><a href=""><strong>Corpo</strong></a></li>
-                    <li><a href=""><strong>Unhas</strong></a></li>
+                    <li><a href="{% url 'unhas' %}"><strong>Unhas</strong></a></li>
                 </ol>
 
             </ul>
             <a href="{% url 'moda' %}" class="botao">Ver todos &raquo;</a>
         </div>
         <div class="coluna col9">
-            <h2>Tendências de Moda e Beleza</h2>
+            <h2><strong>Tendências de Moda e Beleza</strong></h2>
             <video src="{% static 'css/imagens/video/tendencias 2021.mp4' %}" width="500" controls loop></video>
             <br>
         </div>
@@ -60,7 +60,7 @@
 <div class="linha">
     <div class="coluna col7">
         <section>
-            <h2>Como a moda pode ajudar você?</h2>
+            <h2><strong>Como a moda pode ajudar você?</strong></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur autem et in, aliquid commodi sed id
                 voluptatem ad culpa ex reiciendis beatae aut minus voluptatibus iste quod nesciunt voluptas rem?</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta, distinctio, numquam mollitia
@@ -99,7 +99,7 @@
     <div class="linha">
         <footer>
             <div class="coluna col12">
-                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">
+                <img src="{% static 'css/imagens/imagem2.png' %}" width="50" height="50">Look Style Moda
             </div>
         </footer>
     </div>

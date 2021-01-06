@@ -12,6 +12,7 @@ class Items(models.Model):
 
     class Meta:
         verbose_name_plural = 'Items'
+        ordering = ('nome',)
 
     def __str__(self):
         return self.nome
