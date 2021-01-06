@@ -36,12 +36,12 @@
             <h3><strong>MODA</strong></h3>
             <ul class="sem-marcador sem-padding">
                 <ol>
-                    <li><a href=""><strong>Verão</strong></a></li>
-                    <li><a href=""><strong>Inverno</strong></a></li>
-                    <li><a href=""><strong>Moda Praia</strong></a></li>
+                    <li><a href="{% url 'verao' %}"><strong>Verão</strong></a></li>
+                    <li><a href="{% url 'inverno' %}"><strong>Inverno</strong></a></li>
+                    <li><a href="{% url 'modapraia' %}"><strong>Moda Praia</strong></a></li>
                     <li><a href="{% url 'cabelo' %}"><strong>Cabelos</strong></a></li>
-                    <li><a href=""><strong>Skincare</strong></a></li>
-                    <li><a href=""><strong>Corpo</strong></a></li>
+                    <li><a href="{% url 'skincare' %}"><strong>Skincare</strong></a></li>
+                    <li><a href="{% url 'corpo' %}"><strong>Corpo</strong></a></li>
                     <li><a href="{% url 'unhas' %}"><strong>Unhas</strong></a></li>
                 </ol>
 
@@ -50,7 +50,7 @@
         </div>
         <div class="coluna col9">
             <h2><strong>Tendências de Moda e Beleza</strong></h2>
-            <video src="{% static 'css/imagens/video/tendencias 2021.mp4' %}" width="500" controls loop></video>
+            <video src="{% static 'css/imagens/video/tendencias 2021.mp4' %}" width="500" controls loop ></video>
             <br>
         </div>
     </section>

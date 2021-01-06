@@ -40,3 +40,23 @@ def unhas(request):
 
 def cabelo(request):
     return render(request, template_name='aplication/cabelo.html')
+
+
+def verao(request):
+    return render(request, template_name='aplication/verao.html')
+
+
+def inverno(request):
+    return render(request, template_name='aplication/inverno.html')
+
+
+def modapraia(request):
+    return render(request, template_name='aplication/modapraia.html')
+
+
+def skincare(request):
+    return render(request, template_name='aplication/skincare.html')
+
+
+def corpo(request):
+    return render(request, template_name='aplication/corpo.html')

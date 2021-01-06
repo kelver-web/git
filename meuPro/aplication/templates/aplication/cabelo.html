@@ -35,13 +35,13 @@
             <h3><strong>MODA</strong></h3>
             <ul class="sem-marcador sem-padding">
                 <ol>
-                    <li><a href=""><strong>Verão</strong></a></li>
-                    <li><a href=""><strong>Inverno</strong></a></li>
-                    <li><a href=""><strong>Moda Praia</strong></a></li>
+                    <li><a href="{% url 'verao' %}"><strong>Verão</strong></a></li>
+                    <li><a href="{% url 'inverno' %}"><strong>Inverno</strong></a></li>
+                    <li><a href="{% url 'modapraia' %}"><strong>Moda Praia</strong></a></li>
                     <li><a href="{% url 'cabelo' %}"><strong>Cabelos</strong></a></li>
-                    <li><a href=""><strong>Skincare</strong></a></li>
-                    <li><a href=""><strong>Corpo</strong></a></li>
-                    <li><a href=""><strong>Unhas</strong></a></li>
+                    <li><a href="{% url 'skincare' %}"><strong>Skincare</strong></a></li>
+                    <li><a href="{% url 'corpo' %}"><strong>Corpo</strong></a></li>
+                    <li><a href="{% url 'unhas' %}"><strong>Unhas</strong></a></li>
                 </ol>
             </ul>
             <a href="{% url 'moda' %}" class="botao">Ver todos &raquo;</a>
@@ -51,15 +51,10 @@
             <p>O blunt cut é o queridinho corte reto, que mantém o comprimento uniforme ao redor da cabeça. O visual é cheio de elegância, modernidade e a tendência é minimalista e clássica. 
             O blunt cut é o corte perfeito para quem busca praticidade e elegância ao mesmo tempo. E o melhor, combina com todos os tipos de fios, além de ficar bem em todos os tipos de rosto. é uma das apostas de corte para 2021.</p>
             <img src="{% static 'css/imagens/corte.png' %}" alt="" width="700" height="600">
+            <p><strong> CORTE COM FRANJA</strong></p>
+            <p>Qual a mulher que nunca experimentou a franja em algum momento da sua vida? A moda agora é que a franja quase encoste nas sobrancelhas, mas o corte precisa ser mais certinho, sem muitos repicados. </p>
+            <img src="{% static 'css/imagens/corte2.png' %}" alt="" width="700" height="600">
             <p><strong></strong></p>
-            <P></p>
-            <img src="" alt="">
-            <p><strong></strong></p>
-            <p></p>
-            <img src="" alt="" width="700" height="600">
-            <p><strong></strong></p>
-            <P></P>
-            <img src="" alt="">
             <a href="{% url 'beleza' %}" class="botao">Ver outros &raquo;</a>
         </div>
     </section>
