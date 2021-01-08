@@ -40,12 +40,8 @@
                 {% csrf_token %}
                 {{ form.as_p }}
                 <input type="datetime-local" name="data">
-                <input type="submit" class="botao" name="enviar" value="enviar mensagem &raquo;" onclick="msg()" >
-                <script>
-                    function msg() {
-                      alert("Por favor insira os dados corretamente!");
-                    }
-                </script>
+                <input type="submit" class="botao" name="enviar" value="enviar mensagem &raquo;">
+               
             </form>
         </div>
     </section>
